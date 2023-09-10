@@ -1,7 +1,7 @@
 # assignment 7 vg task
 three_Didgit = input("Provide a three digit number: ")
 
-# try to run code Note: - Does not work with negative numbers
+# try to run code
 try:
     if len(three_Didgit)  == 3: # if its a three length number then we can assme that its positive
         num_01, num_02, num_03 = int(three_Didgit[0]), int(three_Didgit[1]), int(three_Didgit[2])   # get and convert numbers from string to int
