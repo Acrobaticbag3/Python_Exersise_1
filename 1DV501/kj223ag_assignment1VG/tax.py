@@ -1,5 +1,5 @@
 # assignment 14 vg task
-monthly_Income = float(input("Please provide monthly income: "))    # get monthly income
+monthly_Income = float(input("Please provide monthly income: "))    # get monthly income # noqa: E501
 
 # defien our tax values
 tax = 0.3
