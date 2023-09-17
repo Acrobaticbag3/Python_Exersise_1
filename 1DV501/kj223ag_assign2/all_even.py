@@ -1,12 +1,11 @@
 # assignment 1
 
-# store usefull variables
-n = 0
-sum = 0
+# variable to store the sum
+even_sum = 0
 
-while n != 101:
-    if n % 2 == 0:  # check if n is devisable by 2
-        print(n)
-        sum = sum + n
-    n = n+1
-print(sum)
+# loop through even numbers upp to 100, excluding 0
+for i in range(2, 101, 2):
+    even_sum += i
+
+# Print the sum
+print("sum of all even numbers up to 100 is:", even_sum)
