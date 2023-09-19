@@ -1,4 +1,4 @@
-# assignment 5 Broken - does not work
+# assignment 5
 def is_prime(n):
     if n <= 1:                  # Primes can only be positive
         return False
