@@ -1,9 +1,12 @@
-def concat(s, n):   # returns the result of concatenating the string s with itself n times - Does not print correctly
+# assignment 11
+# returns the result of concatenating the string s with itself n times
+def concat(s, n):
     s *= n
     print(s)
 
 
-def count(s, x):    # returns the number of times the character x occurs in the string s
+# returns the number of times the character x occurs in the string s
+def count(s, x):
     temp = 0
 
     for i in range(len(s)):
@@ -13,36 +16,47 @@ def count(s, x):    # returns the number of times the character x occurs in the 
     print(f"The letter: {x}, in the srting '{s}' occurs {temp} times.")
 
 
-def reverse(s):     # returns a string with all the characters in s in reverse order.
+# returns a string with all the characters in s in reverse order.
+def reverse(s):
     lst = []
 
-    for i in range(len(s)):
-        lst[] += i
+    # Iterate through the characters in s in reverse order
+    for i in range(len(s) - 1, -1, -1):
+        lst.append(s[i])
 
-    lst.reverse()
-    return lst
-
-
-def first_last(s):  # returns the first and last characters in the string s.
-    pass       
+    # Join the list of characters into a string
+    reversed_str = ''.join(lst)
+    print(reversed_str)
 
 
-def has_two_X(s):   # return True if the string contains exactly two instances of the character X
+# returns the first and last characters in the string s.
+def first_last(s):
+    if len(s) == 0:
+        return None
+
+    first_char = s[0]
+    last_char = s[-1]
+    print(first_char, last_char)
+
+
+# return True if the string contains exactly two instances of the character X
+def has_two_X(s):
     count = 0
 
     for i in range(len(s)):
         if s[i] == "x":
             count += 1
 
-        if count == 2:
-            True
-        else:
-            False    
+    return count == 2
 
 
-def has_duplicates(s):  # returns True if the string s contains any duplicate characters
+# returns True if the string s contains any duplicate characters
+def has_duplicates(s):
+    seen = set()
 
-    for i in range(len(s)):
-        if s[i] == i:
-            True
- 
+    for char in s:
+        if char in seen:
+            return True
+        seen.add(char)
+
+    return False
