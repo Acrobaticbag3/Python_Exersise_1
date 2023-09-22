@@ -1,3 +1,4 @@
+# assignment 18
 import list_functions
 
 lst = [12, 15, 2, 1243, 432, 34]
