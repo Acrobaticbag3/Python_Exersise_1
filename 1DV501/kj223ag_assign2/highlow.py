@@ -2,7 +2,7 @@
 import random
 
 
-# Logic for the guesses
+# logic for the guesses
 def Check_Guess(rand, guess):
     if rand > guess:
         print("Higher:")
@@ -12,12 +12,12 @@ def Check_Guess(rand, guess):
         print(f"Congrats, you found my number {rand}, amount of times guessed: ", end="")  # noqa: E501
 
 
-# Start of main
+# start of main
 rand = random.randint(1, 100)
 guesses = 0
 guess = -1
 
-# Run for as long as our guess != the computers number.
+# run for as long as our guess != the computers number.
 while guess != rand:
     guesses += 1
     try:

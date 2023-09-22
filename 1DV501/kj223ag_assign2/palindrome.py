@@ -30,4 +30,4 @@ for i in test_strings:
     if result:
         print(f'"{i}" is a palindrome? {result}')
     else:
-        print(f'"{i}" is not a palindrome? {result}.')
+        print(f'"{i}" is a palindrome? {result}.')

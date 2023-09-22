@@ -17,19 +17,13 @@ def print_isosceles_triangle(n):
 
 
 # main program
-def main():
-    try:
-        n = int(input("Enter an odd positive integer: "))
-        if n > 0:
-            print_right_angle_triangle(n)
-            print_isosceles_triangle(n)
-        else:
-            print("n must be positive")
+try:
+    n = int(input("Enter an odd positive integer: "))
+    if n > 0:
+        print_right_angle_triangle(n)
+        print_isosceles_triangle(n)
+    else:
+        print("n must be positive")
 
-    except ValueError:
-        print("Value Error: expected an intager.")
-
-
-# start main if in correcet program
-if __name__ == "__main__":
-    main()
+except ValueError:
+    print("Value Error: expected an intager.")
