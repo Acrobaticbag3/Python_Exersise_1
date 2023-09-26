@@ -1,0 +1,26 @@
+important constants
+AGE = 100
+CANDLES PER BOX = 24
+
+initialize usefull variables
+candles left
+total boxes
+
+make a loop that loops through each birthday from 0 to 100
+for i in AGE
+    candles needed = i
+
+    do we need to buy more candles?
+    Yes? then do this:
+        boxes to buy = candles needed - candles left + CANDLES PER BOX / CANDLES PER BOX
+        candles left + boxes to buy x CANDLES PER BOX - candles needed
+
+        update the total number of boxes and print a message
+
+    No? then do this:
+        use up some of the existing candles
+        candles left - candles needed
+
+calculate the remaining candles after the 100th birthday
+
+print the final results
