@@ -11,11 +11,14 @@ while True:
         count += 1
         integer = int(input(f"Input {count}: "))
 
+        # stop the loop if negative integer is detected
         if integer < 0:
             break
 
+        # add integer to our list
         positive_numbers.append(integer)
 
+    # catch potential value error
     except ValueError:
         print("Invalid input. Please enter an integer.")
 

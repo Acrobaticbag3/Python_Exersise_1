@@ -46,4 +46,5 @@ sailors_in_water = simulate_drunken_sailors(size, max_steps, num_sailors)
 percentage_in_water = (sailors_in_water / num_sailors) * 100
 
 # print the results, including the count and percentage of sailors in the water
-print(f"Out of {num_sailors} drunk sailors, {sailors_in_water} ({percentage_in_water:.2f}%) fell into the water.")
+print(f"Out of {num_sailors} drunk sailors, {sailors_in_water}"
+      + f" ({percentage_in_water:.2f}%) fell into the water.")

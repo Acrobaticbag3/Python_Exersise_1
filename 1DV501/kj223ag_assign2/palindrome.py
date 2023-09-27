@@ -7,6 +7,7 @@
 # - "Ni talar bra latin!"
 
 
+# check if string is palindrome
 def is_palindrome(s):
     # remove non-alphanumeric, convert to lowercase
     s = ''.join(c.lower() for c in s if c.isalnum())
@@ -22,9 +23,11 @@ test_strings = [
     "Madam",
     "Ni talar bra latin!",
     "Hello, World!",
+    "What was that?",
 ]
 
 
+# loop through our test strings, check if palindrome
 for i in test_strings:
     result = is_palindrome(i)
     if result:

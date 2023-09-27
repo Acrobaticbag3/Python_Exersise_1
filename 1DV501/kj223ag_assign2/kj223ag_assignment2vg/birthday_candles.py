@@ -29,4 +29,5 @@ for i in range(AGE + 1):
 remaining_boxes = candles_left // CANDLES_PER_BOX
 
 # print total number of boxes and remaining candles
-print(f"Total number of boxes: {total_boxes + remaining_boxes}, Remaining candles: {candles_left}")
+print(f"Total number of boxes: {total_boxes + remaining_boxes},"
+      + f" Remaining candles: {candles_left}")
