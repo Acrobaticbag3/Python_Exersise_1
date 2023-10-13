@@ -24,10 +24,11 @@ def write_file(lines, file_path):
 path = os.getcwd()
 
 # Read text file
-lst = read_file(path)
-print(f"Read {len(lst)} lines from file {path}")
+# lst = read_file(path)
+# print(f"Read {len(lst)} lines from file {path}")
 
 # Write text file
-path = os.getcwd() + "/kj223ag_assign3/mamma_mia.txt"
-write_file(lst, path)
+path = os.getcwd() + "/mamma_mia.txt"
+print(read_file(path))
+# write_file(lst, path)
 print("Text saved in file", path)
